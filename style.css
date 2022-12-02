@@ -1,0 +1,120 @@
+.title {
+  background-color: #1f3218;
+  width: 800px;
+  font-size: 66px;
+  color: #fff;
+
+  padding: 14px 10px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ========== #text-side CSS 시작 ========== */
+
+#text-side {
+  display: inline-block;
+  width: 180px;
+  height: 500px;
+  padding-left: 150px;
+}
+
+.text {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* ========== 게임화면 CSS 시작 ========== */
+
+#bg {
+  width: 800px;
+  height: 500px;
+  background: url(/images/bg.png) no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+#hero {
+  display: inline-block;
+  width: 35px;
+  height: 54px;
+  background: url(/images/hero.png) no-repeat;
+
+  position: absolute;
+  bottom: 3px;
+  left: 382px;
+}
+
+#hero.stop {
+  background-position: 0px 0px;
+}
+
+#hero.left {
+  background-position: -70px 0px;
+}
+
+#hero.right {
+  background-position: -105px 0px;
+}
+
+/* ========== #heart-side CSS 시작 ========== */
+
+#heart-side {
+  flex-grow: 300px;
+  display: inline-block;
+  width: 180px;
+  height: 500px;
+  padding-right: 150px;
+  padding-top: 25px;
+}
+
+#heart-side img {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+/* ========== btn CSS 시작 ========== */
+
+.btn {
+  width: 180px;
+  height: 35px;
+  margin: 10px auto;
+}
+
+.btn button.ready-btn {
+  background-color: rgb(107, 4, 4);
+  width: inherit;
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.btn button.start-btn {
+  display: none;
+}
+
+.btn:hover .ready-btn {
+  display: none;
+}
+
+.btn:hover .start-btn {
+  display: block;
+  background-color: #fff;
+
+  width: inherit;
+  padding: 10px 30px;
+  color: rgb(107, 4, 4);
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+}

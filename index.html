@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ghost Rain Game</title>
+  </head>
+  <body>
+    <div>
+      <h1 class="title">Ghost Rain</h1>
+
+      <section>
+        <div id="text-side">
+          <p class="text">
+            &lt;게임방법&gt;<br /><br />용사님, <br />유령들을 모두 잡아주세요!
+          </p>
+        </div>
+
+        <div id="bg">
+          <span id="hero" class="stop"></span>
+        </div>
+
+        <div id="heart-side">
+          <img src="/images/heart.png" alt="목숨" />
+          <img src="/images/heart.png" alt="목숨" />
+          <img src="/images/heart.png" alt="목숨" />
+          <img src="/images/heart.png" alt="목숨" />
+          <img src="/images/heart.png" alt="목숨" />
+        </div>
+      </section>
+
+      <div class="btn">
+        <button class="ready-btn">READY ?</button>
+        <button class="start-btn">GO !</button>
+      </div>
+    </div>
+    <script src="js/settings.js"></script>
+    <script src="js/ghost.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/init.js"></script>
+    <!-- 컴퓨터는 스크립트가 몇개든 하나로 합쳐서 인지함 but, 순서가 중요! -->
+  </body>
+</html>
